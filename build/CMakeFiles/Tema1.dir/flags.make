@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/c/Users/vladb/Desktop/facultate/PAOO/Tema1/include
+CXX_INCLUDES = -I/mnt/c/Users/vladb/Desktop/FACULTATE/PAOO/Tema1/include
 
 CXX_FLAGS = -std=gnu++17
 

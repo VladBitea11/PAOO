@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/vladb/Desktop/facultate/PAOO/Tema1
+CMAKE_SOURCE_DIR = /mnt/c/Users/vladb/Desktop/FACULTATE/PAOO/Tema1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/vladb/Desktop/facultate/PAOO/Tema1/build
+CMAKE_BINARY_DIR = /mnt/c/Users/vladb/Desktop/FACULTATE/PAOO/Tema1/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/vladb/Desktop/facultate/PAOO/Tema1/build/CMakeFiles /mnt/c/Users/vladb/Desktop/facultate/PAOO/Tema1/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/vladb/Desktop/FACULTATE/PAOO/Tema1/build/CMakeFiles /mnt/c/Users/vladb/Desktop/FACULTATE/PAOO/Tema1/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/vladb/Desktop/facultate/PAOO/Tema1/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/vladb/Desktop/FACULTATE/PAOO/Tema1/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,6 +177,30 @@ src/FootballPlayer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tema1.dir/build.make CMakeFiles/Tema1.dir/src/FootballPlayer.cpp.s
 .PHONY : src/FootballPlayer.cpp.s
 
+src/Team.o: src/Team.cpp.o
+.PHONY : src/Team.o
+
+# target to build an object file
+src/Team.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tema1.dir/build.make CMakeFiles/Tema1.dir/src/Team.cpp.o
+.PHONY : src/Team.cpp.o
+
+src/Team.i: src/Team.cpp.i
+.PHONY : src/Team.i
+
+# target to preprocess a source file
+src/Team.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tema1.dir/build.make CMakeFiles/Tema1.dir/src/Team.cpp.i
+.PHONY : src/Team.cpp.i
+
+src/Team.s: src/Team.cpp.s
+.PHONY : src/Team.s
+
+# target to generate assembly for a file
+src/Team.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Tema1.dir/build.make CMakeFiles/Tema1.dir/src/Team.cpp.s
+.PHONY : src/Team.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +216,9 @@ help:
 	@echo "... src/FootballPlayer.o"
 	@echo "... src/FootballPlayer.i"
 	@echo "... src/FootballPlayer.s"
+	@echo "... src/Team.o"
+	@echo "... src/Team.i"
+	@echo "... src/Team.s"
 .PHONY : help
 
 

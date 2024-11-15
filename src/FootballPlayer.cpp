@@ -1,29 +1,29 @@
 #include "FootballPlayer.h"
 #include <iostream>
 
-FootballPlayer::FootballPlayer(const std::string& playerName, const std::string& playerTeam) : name(playerName), team(playerTeam) {
-    std::cout<< "Contructor apelat, jucator initializat: "<< name << " joaca la "<< team << "." <<std::endl;
+//Constructor implicit
+FootballPlayer::FootballPlayer() : Team(), playerName("Necunoscut"), goals(0) {
+    std::cout<<"Constructor default al jucatorului apelat."<<std::endl;
 }
 
-FootballPlayer& FootballPlayer::operator=(const FootballPlayer& other) {
-    if(this == &other){
-        return *this;
-    }
-
-    name = this->name;
-    team = other.team;
-    std::cout<<"Operatorul = apelat, jucator actualizat: "<<name<< " s-a transferat la "<< team <<"."<<std::endl;
-    return *this;
+//Constructor cu parametru
+FootballPlayer::FootballPlayer(const std::string& teamName, const std::string& playerName, int goalsScored) : Team(teamName), playerName(playerName), goals(goalsScored) {
+    std::cout<< "Contructor parametrizat apelat, jucator initializat: "<< playerName << " joaca la "<< name << " si a marcat "<< goals << " goluri."<<std::endl;
 }
+
+//Copy constructor
+FootballPlayer::FootballPlayer(const FootballPlayer& other) : Team(other), playerName(other.playerName), goals(other.goals) {
+    std::cout<<"Copy constructorul jucatorului: "<<playerName<<" a fost apelat."<<std::endl;
+}
+
+//Move constructor
+/*FootballPlayer::FootballPlayer(FootballPlayer&& other) noexcept : Team(std::move(other)), playerName(std::move(other.playerName)), goals(other.goals) {
+    std::cout<<"Move constructorul jucatorului: "<<playerName<<" a fost apelat."<<std::endl;
+}
+*/
+
 
 FootballPlayer::~FootballPlayer(){
-    std::cout<< "Destructor apelat pentru jucatorul: " << name << std::endl;
+    std::cout<< "Distrugatorul de jucator apelat pentru jucatorul: " << playerName << std::endl;
 }
 
-std::string FootballPlayer::getName() const{
-    return name;
-}
-
-std::string FootballPlayer::getTeam() const {
-    return team;
-}

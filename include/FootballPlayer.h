@@ -1,25 +1,30 @@
 #ifndef FOOTBALLPLAYER_H
 #define FOOTBALLPLAYER_H
 
-#include <string>
+#include "Team.h"
 
-class FootballPlayer {
+class FootballPlayer : public Team {
     private:
-        std::string name;
-        std::string team;
+        std::string playerName;
+        int goals;
 
     public:
-        //Constructor
-        FootballPlayer(const std::string& playerName = "", const std::string& playerTeam = "");
 
-        //Copy operator =
-        FootballPlayer& operator=(const FootballPlayer& other);
+        //Constructor implicit
+        FootballPlayer();
+
+        //Constructor cu parametru
+        FootballPlayer(const std::string& teamName, const std::string& playerName, int goalsScored);
+
+        //Copy constructor
+        FootballPlayer(const FootballPlayer& other);
+
+        //Move constructor
+        FootballPlayer(FootballPlayer&& other) noexcept;
 
         //Destructor
-        ~FootballPlayer();
+        ~FootballPlayer() override;
 
-        //Gettere
-        std::string getName() const;
-        std::string getTeam() const;
+       
 };
 #endif

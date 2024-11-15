@@ -1,7 +1,6 @@
-CMakeFiles/Tema1.dir/src/FootballPlayer.cpp.o: \
- /mnt/c/Users/vladb/Desktop/FACULTATE/PAOO/Tema1/src/FootballPlayer.cpp \
+CMakeFiles/Tema1.dir/src/Team.cpp.o: \
+ /mnt/c/Users/vladb/Desktop/FACULTATE/PAOO/Tema1/src/Team.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/vladb/Desktop/FACULTATE/PAOO/Tema1/include/FootballPlayer.h \
  /mnt/c/Users/vladb/Desktop/FACULTATE/PAOO/Tema1/include/Team.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \

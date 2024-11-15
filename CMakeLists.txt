@@ -5,4 +5,4 @@ set(CMAKE_CXX_STANDARD 17)
 
 include_directories(include)
 
-add_executable(Tema1 main.cpp src/FootballPlayer.cpp)
+add_executable(Tema1 main.cpp src/Team.cpp src/FootballPlayer.cpp)

@@ -1,5 +1,5 @@
 CMakeFiles/Tema1.dir/main.cpp.o: \
- /mnt/c/Users/vladb/Desktop/facultate/PAOO/Tema1/main.cpp \
+ /mnt/c/Users/vladb/Desktop/FACULTATE/PAOO/Tema1/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -150,4 +150,5 @@ CMakeFiles/Tema1.dir/main.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /mnt/c/Users/vladb/Desktop/facultate/PAOO/Tema1/include/FootballPlayer.h
+ /mnt/c/Users/vladb/Desktop/FACULTATE/PAOO/Tema1/include/FootballPlayer.h \
+ /mnt/c/Users/vladb/Desktop/FACULTATE/PAOO/Tema1/include/Team.h

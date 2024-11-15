@@ -2,14 +2,27 @@
 #include "FootballPlayer.h"
 
 int main(){
-    FootballPlayer player1("Lionel Messi", "FC Barcelona");
-    FootballPlayer player2("Cristiano Ronaldo", "Real Madrid");
+    // Instantiez o clasa derivata folosind tipul clasei de baza
+    Team* team1 = new FootballPlayer(); //Se apeleaza constructorul implicit pentru Team si pentru FootballPlayer
+    delete team1; //Se apeleaza destructorul pentru FootballPlayer si appi pentru Team
 
-    std::cout<<"Jucatorul: "<< player2.getName() << " joaca la " << player2.getTeam() << "." << std::endl;
+    std::cout<<"---"<<std::endl;
 
-    player2 = player1;
+    //Instantiez clasa derivata folosind constructorul cu parametri
+    FootballPlayer player2("FC Barcelona", "Lionel Messi", 700);
 
-    std::cout<<"Jucatorul: "<< player2.getName() << " joaca la " << player2.getTeam() << "." << std::endl;
+    std::cout<<"---"<<std::endl;
 
+    FootballPlayer player3; //Constructor implicit
+    FootballPlayer player4("Real Madrid", "Cristiano Ronaldo", 699);
+
+    /*FootballPlayer player6("Liverpool", "Mo Salah", 500);
+    player6 = std::move(player4);
+    */
+
+    std::cout<<"---"<<std::endl;
+
+    FootballPlayer player7(player2);//Copy constructor
+    
     return 0;
 }

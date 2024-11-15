@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/c/Users/vladb/Desktop/facultate/PAOO/Tema1/main.cpp" "CMakeFiles/Tema1.dir/main.cpp.o" "gcc" "CMakeFiles/Tema1.dir/main.cpp.o.d"
-  "/mnt/c/Users/vladb/Desktop/facultate/PAOO/Tema1/src/FootballPlayer.cpp" "CMakeFiles/Tema1.dir/src/FootballPlayer.cpp.o" "gcc" "CMakeFiles/Tema1.dir/src/FootballPlayer.cpp.o.d"
+  "/mnt/c/Users/vladb/Desktop/FACULTATE/PAOO/Tema1/main.cpp" "CMakeFiles/Tema1.dir/main.cpp.o" "gcc" "CMakeFiles/Tema1.dir/main.cpp.o.d"
+  "/mnt/c/Users/vladb/Desktop/FACULTATE/PAOO/Tema1/src/FootballPlayer.cpp" "CMakeFiles/Tema1.dir/src/FootballPlayer.cpp.o" "gcc" "CMakeFiles/Tema1.dir/src/FootballPlayer.cpp.o.d"
+  "/mnt/c/Users/vladb/Desktop/FACULTATE/PAOO/Tema1/src/Team.cpp" "CMakeFiles/Tema1.dir/src/Team.cpp.o" "gcc" "CMakeFiles/Tema1.dir/src/Team.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
