@@ -1,0 +1,3 @@
+/home/vladb/paoo/Tema3/build/CMakeFiles/Tema3.dir
+/home/vladb/paoo/Tema3/build/CMakeFiles/edit_cache.dir
+/home/vladb/paoo/Tema3/build/CMakeFiles/rebuild_cache.dir
